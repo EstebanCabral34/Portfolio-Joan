@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NaelPh - Fotografo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&family=Splash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -29,14 +37,59 @@
         <p class="description">Trabajo con fotografía en estudio y exteriores. Retratos / books y proyectos personales, mira más acá abajo. </p>
         <a class="aboutme-cta" href="https://www.instagram.com/_nael_ph/" target="_blank" ><img src="resources/CTA.png" alt=""></a>
     </section>
+    
+    <section class="parallax">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
 
-    <section class="jobs">
-        <div class="card"><a href=""><img src="resources/Trabajos/Sociales/DSC_0984.jpg" alt=""></a></div>
-        <div class="card"><a href=><img src="resources/Trabajos/Book/IMG_9983_TIF.jpg" alt=""></a></div>
-        <div class="card"><a href=""><img src="resources/Trabajos/Deporte/DSC_0740.jpg" alt=""></a></div>
-        <div class="card"><a href=""><img src="resources/Trabajos/Bodegon/DSC_0011.jpg" alt=""></a></div>
-        <div class="card"><a href=""><img src="resources/Trabajos/Street/DSC02610.jpg" alt=""></a></div>
-    </section>
-    <footer></footer>
-</body>
-</html>
+                <section class="jobs">
+                    <div class="card">
+                        <a href="">
+                            <img src="resources/Trabajos/Sociales/DSC_0984.jpg" alt="">
+                            <span class="card-text">Eventos / Sociales</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="">
+                            <img src="resources/Trabajos/Book/IMG_9983_TIF.jpg" alt="">
+                            <span class="card-text">Book</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="">
+                            <img src="resources/Trabajos/Deporte/DSC_0740.jpg" alt="">
+                            <span class="card-text">Deporte</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="">
+                            <img src="resources/Trabajos/Bodegon/DSC_0011.jpg" alt="">
+                            <span class="card-text">Bodegon</span>
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <a href="">
+                            <img src="resources/Trabajos/Street/DSC02610.jpg" alt="">
+                            <span class="card-text">Street</span>
+                        </a>
+                    </div>
+                
+                </section>
+            </div>
+        </section>
+        
+        <footer>
+            <p class="footer-text">© 2026 NaelPH. Todos los derechos reservados.</p>
+        </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        document.querySelector('.parallax-bg').style.transform =
+            `translateY(${scrolled * 0.4}px)`;});
+    </script>
+    </body>
+    </html>

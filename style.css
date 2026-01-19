@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body{
     color: #FDFDFD;
     margin: 0;
     background-color:#0C1014;
+    font-family: 'Rosario', sans-serif;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 4vh;
 }
 a{
     text-decoration: none;
@@ -17,10 +20,12 @@ ul{
     display:flex;
     list-style: none;
     gap: 20px;
-    padding-top: 2vh;
+    padding-top: 5vh;
     padding-right: 2vh;
+    font-family: 'Rosario', sans-serif;
 }
 .logo{
+    padding-top: 1vh;
     width: 70px;
 }
 .logo img{
@@ -39,6 +44,20 @@ ul{
     background-position: center;
     background-repeat: no-repeat;
     min-height: 95vh;
+    object-fit: cover;
+}
+.title{
+    font-family: 'Splash', cursive;
+    font-size: 8vh;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: lighter;
+}
+.subtitle{
+    font-family: 'Shalimar', cursive;
+    font-size: 4vh;
+    line-height: 1;
+    font-weight: lighter;
 }
 .title,.subtitle{
     text-align: center;
@@ -51,11 +70,17 @@ ul{
 }
 .aboutme{
     display:grid;
-    grid-template-rows: 1/2fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: 2vh;
+    gap: 20px;
+    margin: 0;
+    background-color: #0C1014;
+    position: relative;
+    z-index: 2;
+    padding: 0 1vh 2vh 1vh;
 }
 .name{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3vh;
     text-align:left;
     padding-top: 12vh;
     margin: 0;
@@ -66,14 +91,85 @@ ul{
 }
 .aboutme-cta img{
     width: 12vh;
+    object-fit: cover;
 }
 .aboutme{
     grid-column: 1/1;
 }
 .description{
+    font-size: 2..4vh;
     grid-column: 1/3;
 }
+.jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin-top: 10vh;
+}
+
 .card img{
-    width: 50vh;
-    height: auto;
+    width: 45vh;
+    max-width: 440px;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 2vh;
+    filter: grayscale(100%);
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card:active {
+  filter: grayscale(0%);
+}
+.card-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 500;
+  pointer-events: none;
+}
+.parallax {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5vh 0;
+}
+.parallax-bg {
+  position: absolute;
+  top: -20;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background-image: url(resources/fondotrabajos.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  will-change: transform;
+}
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 3vh;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.parallax-bg::after {
+  content:"";
+  position: absolute;
+  inset:0;
+  background: rgba(0,0,0,.25);
 }
