@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shalimar&family=Splash&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
 <body>
     <header class="header">
-        <a class="logo" href=""><img src="resources/Firma.png" alt="Logo de NaelPH"></a>
+        <a class="logo" href=""><img src="assets/resources/Firma.png" alt="Logo de NaelPH"></a>
             <nav class="nav">
             <ul>
-                <li><a href="">Sobre Mi</a></li>
-                <li><a href="">Trabajos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#aboutme">Sobre Mi</a></li>
+                <li><a href="#jobs">Trabajos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             </nav>
         </header>
@@ -31,54 +32,82 @@
         <h2 class="subtitle">Fotografo Profesional</h2>
     </section>
 
-    <section class="aboutme"> 
+    <section id="aboutme"> 
         <h2 class="name">Joan Natanael <br>Leguizamon</h2> 
-        <img src="resources/Imagen sobremi.png" alt=""> 
+        <img class="aboutme-img" src="assets/resources/Imagen sobremi.png" alt=""> 
         <p class="description">Trabajo con fotografía en estudio y exteriores. Retratos / books y proyectos personales, mira más acá abajo. </p>
-        <a class="aboutme-cta" href="https://www.instagram.com/_nael_ph/" target="_blank" ><img src="resources/CTA.png" alt=""></a>
+        <a class="aboutme-cta" href="https://www.instagram.com/_nael_ph/" target="_blank" ><img src="assets/resources/CTA.png" alt=""></a>
     </section>
     
     <section class="parallax">
         <div class="parallax-bg"></div>
         <div class="parallax-content">
 
-                <section class="jobs">
+                <section id="jobs">
                     <div class="card">
                         <a href="">
-                            <img src="resources/Trabajos/Sociales/DSC_0984.jpg" alt="">
+                            <img src="assets/resources/Trabajos/Sociales/DSC_0984.jpg" alt="">
                             <span class="card-text">Eventos / Sociales</span>
                         </a>
                     </div>
                     
                     <div class="card">
                         <a href="">
-                            <img src="resources/Trabajos/Book/IMG_9983_TIF.jpg" alt="">
+                            <img src="assets/resources/Trabajos/Book/IMG_9983_TIF.jpg" alt="">
                             <span class="card-text">Book</span>
                         </a>
                     </div>
                     
                     <div class="card">
                         <a href="">
-                            <img src="resources/Trabajos/Deporte/DSC_0740.jpg" alt="">
+                            <img src="assets/resources/Trabajos/Deporte/DSC_0740.jpg" alt="">
                             <span class="card-text">Deporte</span>
                         </a>
                     </div>
                     
                     <div class="card">
                         <a href="">
-                            <img src="resources/Trabajos/Bodegon/DSC_0011.jpg" alt="">
+                            <img src="assets/resources/Trabajos/Bodegon/DSC_0011.jpg" alt="">
                             <span class="card-text">Bodegon</span>
                         </a>
                     </div>
                     
                     <div class="card">
                         <a href="">
-                            <img src="resources/Trabajos/Street/DSC02610.jpg" alt="">
+                            <img src="assets/resources/Trabajos/Street/DSC02610.jpg" alt="">
                             <span class="card-text">Street</span>
                         </a>
                     </div>
                 
                 </section>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="title-contact">Contactame</h2>
+            <form action="">
+                <label for="nombreyapellido">Nombre y Apellido</label>
+                <input type="text" required>
+
+                <label for="email">Email</label>
+                <input type="email" required>
+
+                <label for="localidad">Localidad</label>
+                <input type="text" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <h2 class="subtitle-contact">Me encontras en...</h2>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345.0085966235756!2d-58.552027103184784!3d-34.647291969176834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95228ffe765%3A0xa0329b3a43e4ba27!2sEspacio%20Prisma!5e0!3m2!1ses-419!2sar!4v1769150234719!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+            </div>
+
+            <div class="direction-container">
+                <p class="direction"><b>Jose Gonzales Castillo 321 </b><br> Esquina las heras <br> Ramos Mejia</p>
+                <a href="https://www.instagram.com/kimstudio.ok/" target="_blank"><img class="logo-kim" src="assets/resources/kim studio.png" alt=""></a>
             </div>
         </section>
         

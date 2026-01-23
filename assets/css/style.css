@@ -39,7 +39,7 @@ ul{
     
 }
 .hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.5)), url(resources/Hero\ Image.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.5)), url(../resources/Hero_Image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,10 +68,9 @@ ul{
 .title{
     padding-top: 25vh;
 }
-.aboutme{
+#aboutme{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
     margin: 0;
     background-color: #0C1014;
     position: relative;
@@ -82,12 +81,13 @@ ul{
     font-family: 'Roboto Mono', monospace;
     font-size: 3vh;
     text-align:left;
-    padding-top: 12vh;
+    padding-top: 10vh;
     margin: 0;
 }
-.aboutme img {
+.aboutme-img {
     align-self:auto;
     width:20vh;
+    padding-left: 4vh;
 }
 .aboutme-cta img{
     width: 12vh;
@@ -97,10 +97,10 @@ ul{
     grid-column: 1/1;
 }
 .description{
-    font-size: 2..4vh;
+    font-size: 2.4vh;
     grid-column: 1/3;
 }
-.jobs {
+#jobs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +152,7 @@ ul{
   left: 0;
   width: 100%;
   height: 150%;
-  background-image: url(resources/fondotrabajos.jpg);
+  background-image: url(../resources/fondotrabajos.jpg);
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -172,4 +172,81 @@ ul{
   position: absolute;
   inset:0;
   background: rgba(0,0,0,.25);
+}
+.title-contact{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3vh;
+    padding-left: 1vh;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+    padding: 0 3vh 0 3vh;
+    margin-bottom: 1vh;
+}
+form label{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vh;
+}
+form input, form textarea{
+    font-size: 2vh;
+    padding: 1vh;
+    border: solid #25292E 2px;
+    background-color: #0C1014;
+    color: #ffffff;
+}
+form textarea{
+    resize: vertical;
+    min-height: 10vh;
+}
+form button{
+    font-family: 'Rosario', sans-serif;
+    font-size: 2vh;
+    padding: 1vh;
+    border: none;
+    border-radius: 50px;
+    background-color: #25292E;
+    color: #ffffff;
+    width: 10vh;
+}
+.subtitle-contact{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.3vh;
+    padding-left: 1vh;
+    margin: 0
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    border: solid #25292E 2px;
+    margin: 20px
+}
+iframe{
+    border: solid #25292E 10px;
+    width: 100%;
+    margin: 1vh;
+    height: auto;
+    text-align: center;
+}
+.logo-kim{
+    width: 10vh;
+    height: auto;
+    border-radius: 60px;
+}
+.direction-container{
+    display: flex;
+    gap: 4vh;
+}
+.direction{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2vh;
+    margin-left: 2vh;
+}
+footer{
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8vh;
+    background-color: #25292E;
 }
