@@ -20,6 +20,7 @@ ul{
     display:flex;
     list-style: none;
     gap: 20px;
+    font-size: 2.3vh;
     padding-top: 5vh;
     padding-right: 2vh;
     font-family: 'Rosario', sans-serif;
@@ -93,7 +94,7 @@ ul{
     width: 12vh;
     object-fit: cover;
 }
-.aboutme{
+#aboutme{
     grid-column: 1/1;
 }
 .description{
@@ -106,8 +107,8 @@ ul{
     align-items: center;
     gap: 3vh;
     margin-top: 10vh;
+    margin-bottom: 2vh;
 }
-
 .card img{
     width: 45vh;
     max-width: 440px;
@@ -115,7 +116,6 @@ ul{
     object-fit: cover;
     border-radius: 30px;
     margin-bottom: 2vh;
-    filter: grayscale(100%);
 }
 .card{
   display: flex;
@@ -123,8 +123,17 @@ ul{
   align-items: center;
   position: relative;
 }
-.card:active {
-  filter: grayscale(0%);
+.card::after {
+  content: "";
+  border-radius: 30px;
+  height: 30vh;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.800),
+    rgba(0, 0, 0, 0.400)
+  );
+  pointer-events: none;
 }
 .card-text {
   position: absolute;
@@ -132,7 +141,7 @@ ul{
   top: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-weight: 500;
   pointer-events: none;
 }

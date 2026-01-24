@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    color: #FDFDFD;
+    margin: 0;
+    background-color:#0C1014;
+    font-family: 'Rosario', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+}
+a{
+    text-decoration: none;
+    color: #FDFDFD;
+}
+ul{
+    display:flex;
+    list-style: none;
+    gap: 20px;
+    padding-top: 5vh;
+    padding-right: 2vh;
+    font-family: 'Rosario', sans-serif;
+}
+.logo{
+    padding-top: 1vh;
+    width: 70px;
+}
+.logo img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 5vh;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.title{
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.card img{
+    width: 45vh;
+    max-width: 440px;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.card-section{
+    display: grid;
+    justify-content: center;
+    gap: 1vh;
+}
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+.lightbox img {
+  max-width: 100%;
+  border-radius: 10px;
+}
