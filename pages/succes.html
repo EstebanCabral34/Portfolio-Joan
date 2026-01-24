@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mensaje enviado</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje enviado</title>
+  <style>
+    body {
+      background-color: #0e1317;
+      color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid #fafafa;
+      text-decoration: none;
+      color: #fafafa;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #fafafa;
+      color: #0e1317;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
     <h2>¡Gracias por tu mensaje!</h2>
-    <p>Te voy a estar respondiendo a la brevedad.</p>
-    <a href="/">Volver al sitio</a>
+    <p>Tu consulta fue enviada correctamente. Te voy a responder lo antes posible.</p>
+    <a href="/">Volver al inicio</a>
+  </div>
 </body>
 </html>
