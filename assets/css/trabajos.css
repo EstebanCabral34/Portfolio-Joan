@@ -11,7 +11,15 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 4vh;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #0C1014;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    }
 a{
     text-decoration: none;
     color: #FDFDFD;
@@ -20,7 +28,6 @@ ul{
     display:flex;
     list-style: none;
     gap: 20px;
-    padding-top: 5vh;
     padding-right: 2vh;
     font-family: 'Rosario', sans-serif;
 }
@@ -31,7 +38,6 @@ ul{
 .logo img{
     max-width: 100%;
     height: auto;
-    padding-top: 5vh;
 }
 .nav{
     display: flex;
@@ -41,7 +47,7 @@ ul{
 .title{
     text-align: center;
     font-size: 4vh;
-    padding-top: 3vh;
+    padding-top: 5vh;
     font-family: 'Montserrat', sans-serif;
 }
 .card img{
