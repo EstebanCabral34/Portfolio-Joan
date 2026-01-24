@@ -91,7 +91,7 @@ ul{
     padding-top: 10vh;
     margin: 0;
 }
-.aboutme-img {
+.aboutme-img{
     align-self:auto;
     width:20vh;
     padding-left: 4vh;
@@ -264,4 +264,66 @@ footer{
     font-family: 'Roboto Mono', monospace;
     font-size: 1.8vh;
     background-color: #25292E;
+}
+@media (min-width: 600px) {
+  .header {
+    padding: 2vh 3vh;
+  }
+
+  .logo img {
+    width: 10vh;
+  }
+
+  body {
+    padding-top: 8vh;
+  }
+
+  ul {
+    gap: 3vh;
+    font-size: 2.2vh;
+  }
+}
+@media (min-width: 900px) {
+  .header {
+    backdrop-filter: blur(4px);
+  }
+
+  .logo img {
+    width: 11vh;
+  }
+
+  ul {
+    gap: 4vh;
+    font-size: 2.4vh;
+  }
+
+  body {
+    padding-top: 9vh;
+  }
+}
+@media (min-width: 1200px) {
+    
+  .header {
+    justify-content: space-around;
+  }
+
+  .logo img {
+    width: 12vh;
+  }
+
+  ul {
+    gap: 4vh;
+    font-size: 2.5vh;
+  }
+
+  #aboutme{
+    padding-left: 35vh;
+    padding-right: 30vh;
+  }
+      
+  .aboutme-img{
+    width:25vh;
+    padding-left: 30vh;
+  }
+
 }
