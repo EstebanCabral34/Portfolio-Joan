@@ -84,22 +84,16 @@
 
         <section id="contact">
             <h2 class="title-contact">Contactame</h2>
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="contact">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/">
                 <input type="hidden" name="bot-field">
-
-                <label for="nombreyapellido">Nombre y Apellido</label>
-                <input id="nombreyapellido" type="text" name="nombreyapellido" required>
-
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" required>
-
-                <label for="localidad">Localidad</label>
-                <input id="localidad" type="text" name="localidad" required>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
+                <label>Nombre y Apellido</label>
+                <input type="text" name="nombreyapellido" required>
+                <label>Email</label>
+                <input type="email" name="email" required>
+                <label>Localidad</label>
+                <input type="text" name="localidad" required>
+                <label>Mensaje</label>
+                <textarea name="mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
 
