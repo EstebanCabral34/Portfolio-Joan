@@ -84,21 +84,25 @@
 
         <section id="contact">
             <h2 class="title-contact">Contactame</h2>
-            <form action="">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="bot-field">
+
                 <label for="nombreyapellido">Nombre y Apellido</label>
-                <input type="text" required>
+                <input id="nombreyapellido" type="text" name="nombreyapellido" required>
 
                 <label for="email">Email</label>
-                <input type="email" required>
+                <input id="email" type="email" name="email" required>
 
                 <label for="localidad">Localidad</label>
-                <input type="text" required>
+                <input id="localidad" type="text" name="localidad" required>
 
                 <label for="mensaje">Mensaje</label>
-                <textarea required></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
+
             <h2 class="subtitle-contact">Me encontras en...</h2>
             <div class="maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345.0085966235756!2d-58.552027103184784!3d-34.647291969176834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95228ffe765%3A0xa0329b3a43e4ba27!2sEspacio%20Prisma!5e0!3m2!1ses-419!2sar!4v1769150234719!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
