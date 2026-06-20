@@ -158,7 +158,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 5vh 0;
 }
 .parallax-bg {
@@ -180,7 +180,7 @@ ul{
   font-size: 3vh;
   font-weight: bold;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 .parallax-bg::after {
   content:"";
@@ -284,6 +284,16 @@ footer{
   }
 }
 @media (min-width: 900px) {
+
+   h1.title{
+    margin: 0;
+    padding-top: 10vh;
+  }
+
+  h2.subtitle{
+    margin-top: 60vh;
+  }
+  
   .header {
     backdrop-filter: blur(4px);
   }
@@ -300,8 +310,21 @@ footer{
   body {
     padding-top: 9vh;
   }
+
+  #contact{
+    margin: 0 50vh 0 50vh;
+  }
 }
 @media (min-width: 1200px) {
+
+  h1.title{
+    margin: 0;
+    padding-top: 10vh;
+  }
+
+  h2.subtitle{
+    margin-top: 60vh;
+  }
     
   .header {
     justify-content: space-around;
@@ -317,8 +340,7 @@ footer{
   }
 
   #aboutme{
-    padding-left: 35vh;
-    padding-right: 30vh;
+    margin: 0 50vh 0 50vh;
   }
       
   .aboutme-img{
@@ -326,4 +348,8 @@ footer{
     padding-left: 30vh;
   }
 
+
+  #contact{
+    margin: 0 50vh 0 50vh;
+  }
 }
